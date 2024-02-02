@@ -8,7 +8,7 @@ environment {
         greeting = "hello everyone"
     }
 options {
-        timeout(time: 1, unit: 'SECONDS') 
+        timeout(time: 1, unit: 'HOURS') 
     }
 
     stages {
@@ -27,7 +27,7 @@ options {
                 sh """
                 echo 'hi'
                 echo "$greeting"
-                sleep 10
+                
                 """
                 
             }
