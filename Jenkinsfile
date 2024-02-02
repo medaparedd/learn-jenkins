@@ -7,6 +7,9 @@ pipeline {
 environment { 
         greeting = "hello everyone"
     }
+options {
+        timeout(time: 1, unit: 'SECONDS') 
+    }
 
     stages {
         stage('Build') {
@@ -24,7 +27,9 @@ environment {
                 sh """
                 echo 'hi'
                 echo "$greeting"
+                sleep 10
                 """
+                
             }
         }
     }
