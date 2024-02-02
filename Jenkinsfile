@@ -26,5 +26,11 @@ post {
         always { 
             echo 'I will always say Hello again!'
         }
+        failure {
+            echo 'i will alert you,when pipeline is failed'
+        }
+        success {
+            echo 'i say hi it is success'
+        }
     }
 }
