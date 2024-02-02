@@ -8,7 +8,8 @@ environment {
         greeting = "hello everyone"
     }
 options {
-        timeout(time: 1, unit: 'HOURS') 
+        timeout(time: 1, unit: 'HOURS')
+        disableConcurrentBuilds() 
     }
 
     stages {
@@ -27,7 +28,7 @@ options {
                 sh """
                 echo 'hi'
                 echo "$greeting"
-                
+
                 """
                 
             }
