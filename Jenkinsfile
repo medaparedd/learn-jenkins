@@ -37,7 +37,7 @@ parameters {
         stage('Deploy') {
             steps {
                 sh """
-                echo 'namasthe'
+                echo 'namas'
                 echo "$greeting"
 
                 """
